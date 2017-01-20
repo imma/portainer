@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+function _portainer_profile {
+  local shome="${_portainer_home:-"$(cd -P -- "$(dirname -- "$BASH_SOURCE")/.." && pwd -P)"}"
+  PATH="$shome/bin:$PATH"
+
+  export PORTAINER_VERSION="1.11.1"
+}
+
+_portainer_profile
