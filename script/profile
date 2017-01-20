@@ -2,7 +2,7 @@
 
 function _portainer_profile {
   local shome="${_portainer_home:-"$(cd -P -- "$(dirname -- "$BASH_SOURCE")/.." && pwd -P)"}"
-  PATH="$shome/bin:$PATH"
+  PATH="$shome/vendor/portainer:$PATH"
 
   export PORTAINER_VERSION="1.11.1"
 }
